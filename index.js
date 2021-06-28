@@ -857,9 +857,9 @@ async function starts() {
                     ini_user = client.contacts[num]
                     ini_img = await getBuffer(`https://api-exteam.herokuapp.com/api/welcome?nome=${pushname2}&gpnome=${encodeURIComponent(mdata.subject)}&perfil=${psCAPA.link}&fundo=https://pt-static.z-dn.net/files/df9/e66f1513bca9d94fefdea96e5a5c59de.jpg`)
                     teks = `━━━━━━❰⊰❰⊰✾⊱❱⊱❱━━━━━━
-    Bem Vindo Ao Grupo! Olhe As Regras Do grupo Para Não Ser Banido 
+    ¡Bienvenido al grupo loquito, aca todo es joda no te lo tomes personal! Mire las reglas del grupo para no ser baneado para utilizar el bot digita*menu
 
-    ⚡ ⚡Zeus⚡ ⚡ 
+    ⚡ ⚡botcito⚡ ⚡ 
     ━━━━━━❰⊰❰⊰✾⊱❱⊱❱━━━━━━`
                     group_info = await client.groupMetadata(anu.jid)
                     client.sendMessage(anu.jid, ini_img, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -959,7 +959,7 @@ Bem Vindo Ao Grupo! Olhe As Regras Do grupo Para Não Ser Banido
 			pushname2 = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
 
 			mess = {
-					wait: '⚡ Zeus está a criar ⚡',
+					wait: '⚡Espera oe llama Bobcito esta que procesa 😎\n\n❗ ⚡',
 					success: 'Pronto',
 					levelon: '*leveling* *ativado*',
 					leveloff: '*leveling* *desativado*',
@@ -1577,7 +1577,7 @@ tttset.autoEndTime = "off"
                     })
                 break
                 
-                case 'spam':
+                case 'spam2':
                     if (!isGroup) return reply(mess.only.group)
                     if (!isGroupAdmins) return reply(mess.only.admin)
                     members_id = []
@@ -3504,7 +3504,7 @@ break
 					const userXp = getLevelingXp(sender)
 					if (userLevel === undefined && userXp === undefined) return reply(mess.levelnol)
 					sem = sender.replace('@s.whatsapp.net','')
-					resul = `┏━━❉ *LEVEL* ❉━━\n┣⊱ Nome : ${sem}\n┣⊱ Seu XP :  ${userXp}\n┣⊱ Seu Level : ${userLevel}\n┗━━━━━━━━━━━━`
+					resul = `┏━━❉ *LEVEL* ❉━━\n┣⊱ llama : ${sem}\n┣⊱ EXP CONERO :  ${userXp}\n┣⊱ TU LEVEL APESTOSO : ${userLevel}\n┗━━━━━━━━━━━━`
 					client.sendMessage(from, resul, text, { quoted: mek})
 					.catch(async (err) => {
                     console.error(err)
@@ -4726,8 +4726,8 @@ break
 					break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos para instalar o ⚡Super Xandão⚡_\n\ntermux-setup-storage\n\npkg install git\n\npkg install ffmpeg\n\npkg install wget\n\npkg install nodejs\n\ngit clone https://github.com/Meliodas-rai/Bot\n\ncd Bot\n\nbash install.sh\n\nnpm start\n\n\nescaneie o qr code q ira aparecer\n\naperte o botão "Ctrl" depois aperte "C" no teclado\n\ndigite\n\npkg install pm2\n\nnpm i -g pm2\n\npm2 start index.js\n\npm2 monit\n\n_seja feliz meu parsa_😎\n\nOBS:vc vai precisar do termux e de 2 celulares'})
+					buffer = await getBuffer(`https://yt3.ggpht.com/ytc/AKedOLT482o9vKv6gtKd666nludOLBvlrBIXcBJ3DqdsWg=s88-c-k-c0x00ffffff-no-rj`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_l\n\Deja Kachar loco'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -4915,7 +4915,7 @@ break
 						fs.unlinkSync(rano)
 					})
 					break
-				case 'marcar':
+				case 'ternas':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -4927,7 +4927,7 @@ break
 					}
 					mentions(teks, members_id, true)
 					break
-                case 'marcar2':
+                case 'marcar22':
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
@@ -4937,7 +4937,7 @@ break
 					}
 					reply(teks)
 					break
-                 case 'marcar3':
+                 case 'marcar33':
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
