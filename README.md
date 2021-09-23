@@ -66,6 +66,12 @@ Comandos pra instalar:
 
 ## MATERIAL
 
+npm i -g pm2
+
+pm2 start index.js
+
+pm2 monit
+
 * termux e dois celulares 
 
 * OBS: o bot só pode ser instalador em celulares com o androind acima de 4.0 ou 5.0
